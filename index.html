@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krrishvardhan Vyas - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="section">
+        <button id="darkToggle" onclick="toggleDarkMode()"><i data-lucide="moon"></i></button>
+        <h1 data-tippy-content="Hello there">Krrishvardhan Vyas</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <p>Email: <a href="vyaskrrishvardhan@gmail.com ">vyaskrrishvardhan@gmail.com</a> | Phone: +91-8079069420</p>
+        <div>
+            <button class="btn" onclick="scrollToSection('about')"><i data-lucide="user"></i> About</button>
+            <button class="btn" onclick="scrollToSection('skills')"><i data-lucide="code-2"></i> Skills</button>
+            <button class="btn" onclick="scrollToSection('projects')"><i data-lucide="folder-open"></i> Projects</button>
+            <button class="btn" onclick="scrollToSection('contact')"><i data-lucide="mail"></i> Contact</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2><i data-lucide="user"></i> About Me</h2>
+        <p>Hello! I'm Krrishvardhan Vyas, a passionate web developer with experience in creating clean, functional, and user-friendly websites. I love solving problems and building things that make a difference.</p>
+        <p>I specialize in front-end development and enjoy working with modern web technologies to create seamless digital experiences.</p>
+        <button class="btn" onclick="toggleContent('moreAbout')"><i data-lucide="chevron-down"></i> Read More</button>
+        <div id="moreAbout" class="hidden">
+            <p>When I'm not coding, I enjoy learning about new technologies, contributing to open-source projects, and staying up-to-date with the latest industry trends. I believe in continuous learning and improvement.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2><i data-lucide="code-2"></i> Skills</h2>
+        <div class="skill-group technical">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Web Design</li>
+                <li>Git & Version Control</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </div>
+        <div class="skill-group soft">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2><i data-lucide="folder-open"></i> Projects</h2>
+        
+        <div class="project-card">
+            <h3>Project 1: E-Commerce Website</h3>
+            <p>A fully responsive e-commerce platform with shopping cart functionality and payment integration.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <button class="btn" onclick="alert('Demo link: https://demo-project1.com')"><i data-lucide="external-link"></i> View Demo</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2><i data-lucide="mail"></i> Contact Me</h2>
+        <p>I'd love to hear from you! Feel free to reach out for collaborations or just a friendly chat.</p>
+        
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn" data-tippy-content="are you sure?!"><i data-lucide="send"></i> Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section">
+        <p>© 2024 Krrishvardhan Vyas. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-link" data-tippy-content="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-link" data-tippy-content="GitHub"><i data-lucide="github"></i></a>
+            <a href="#" class="social-link" data-tippy-content="Twitter"><i data-lucide="twitter"></i></a>
+        </div>
+        <button class="btn" onclick="scrollToTop()"><i data-lucide="arrow-up"></i> Back to Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
