@@ -1,3 +1,44 @@
+/* Geist Pixel – Vercel (npm: geist) */
+@font-face {
+  font-family: "Geist Pixel Square";
+  src: url('./node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Square.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Grid";
+  src: url('./node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Grid.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Circle";
+  src: url('./node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Circle.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Triangle";
+  src: url('./node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Triangle.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Line";
+  src: url('./node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Line.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(0.9702 0 0);
   --foreground: oklch(0.2178 0 0);
@@ -34,6 +75,12 @@
   --font-sans: Geist, ui-sans-serif, sans-serif, system-ui;
   --font-serif: Sorts Mill Goudy, ui-serif, serif;
   --font-mono: Geist Mono, ui-monospace, monospace;
+  --font-pixel: "Geist Pixel Square", ui-monospace, monospace;
+  --font-pixel-square: "Geist Pixel Square", ui-monospace, monospace;
+  --font-pixel-grid: "Geist Pixel Grid", ui-monospace, monospace;
+  --font-pixel-circle: "Geist Pixel Circle", ui-monospace, monospace;
+  --font-pixel-triangle: "Geist Pixel Triangle", ui-monospace, monospace;
+  --font-pixel-line: "Geist Pixel Line", ui-monospace, monospace;
   --radius: 0rem;
   --shadow-x: 0px;
   --shadow-y: 0.125rem;
@@ -89,6 +136,12 @@
   --font-sans: Geist, ui-sans-serif, sans-serif, system-ui;
   --font-serif: Sorts Mill Goudy, ui-serif, serif;
   --font-mono: Geist Mono, ui-monospace, monospace;
+  --font-pixel: "Geist Pixel Square", ui-monospace, monospace;
+  --font-pixel-square: "Geist Pixel Square", ui-monospace, monospace;
+  --font-pixel-grid: "Geist Pixel Grid", ui-monospace, monospace;
+  --font-pixel-circle: "Geist Pixel Circle", ui-monospace, monospace;
+  --font-pixel-triangle: "Geist Pixel Triangle", ui-monospace, monospace;
+  --font-pixel-line: "Geist Pixel Line", ui-monospace, monospace;
   --radius: 0rem;
   --shadow-x: 0px;
   --shadow-y: 0.125rem;
@@ -143,6 +196,12 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
+  --font-pixel: var(--font-pixel);
+  --font-pixel-square: var(--font-pixel-square);
+  --font-pixel-grid: var(--font-pixel-grid);
+  --font-pixel-circle: var(--font-pixel-circle);
+  --font-pixel-triangle: var(--font-pixel-triangle);
+  --font-pixel-line: var(--font-pixel-line);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
