@@ -9,8 +9,7 @@ description: Arrow Functions in JavaScript.
 
 ## Why Arrow Functions?
 So before we understand what are Arrow functions let's understand **Why** are Arrow functions.
-![Image|673](assets/hattori.png)
-
+![Image|163](assets/Blaze.gif)
 ```
 const arrow = () => {
   return true;

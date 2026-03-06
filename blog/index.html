@@ -49,22 +49,14 @@
                 title: 'Getting Started with Web Development',
                 date: 'March 7, 2026',
                 tags: ['webdev', 'html', 'css', 'javascript'],
-                excerpt: "A beginner's guide to jumping into the world of web development — tools, resources, and the mindset needed to succeed."
+                description: "A beginner's guide to jumping into the world of web development — tools, resources, and the mindset needed to succeed."
             }, {
                 slug: 'arrow-functions',          // must match the filename (no .md)
                 title: 'Arrow Functions',
                 date: 'March 8, 2026',
                 tags: ['webdev', 'javascript'],
-                excerpt: 'Arrow Functions in JavaScript.'
+                description: 'Arrow Functions in JavaScript.'
             },
-            // Add more posts here:
-            // {
-            //   slug: 'your-post-filename-without-extension',
-            //   title: 'Your Post Title',
-            //   date: 'Month DD, YYYY',
-            //   tags: ['tag1', 'tag2'],
-            //   excerpt: 'Short description shown on the listing page.'
-            // }
         ];
 
         function renderPosts() {
@@ -81,7 +73,7 @@
                         <span><i data-lucide="calendar" style="width:12px;height:12px;display:inline;vertical-align:middle;margin-right:3px;"></i>${post.date}</span>
                     </div>
                     <h3>${post.title}</h3>
-                    <p>${post.excerpt}</p>
+                    <p>${post.description}</p>
                     <div class="tags">${post.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
                     <a class="btn" href="post.html?post=${encodeURIComponent(post.slug)}">
                         <i data-lucide="book-open"></i> Read Post
