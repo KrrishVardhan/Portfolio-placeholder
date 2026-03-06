@@ -1,7 +1,11 @@
 ---
 title: Getting Started with Web Development
 date: March 7, 2026
-tags: webdev, html, css, javascript
+tags:
+  - webdev
+  - html
+  - css
+  - javascript
 excerpt: A beginner's guide to jumping into the world of web development — tools, resources, and the mindset needed to succeed.
 ---
 
