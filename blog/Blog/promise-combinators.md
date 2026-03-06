@@ -104,7 +104,7 @@ fetchNetherWart
 
 Console output:
 
-```shell
+```bash
 Scout sent to gather Nether Wart...
 Nether Wart secured!
 ```
