@@ -4,7 +4,7 @@ date: March 8,2026
 tags:
   - webdev
   - javascript
-excerpt: Arrow Functions in JavaScript.
+description: Arrow Functions in JavaScript.
 ---
 
 ## Why Arrow Functions?
@@ -13,6 +13,6 @@ So before we understand what are Arrow functions let's understand **Why** are Ar
 
 ```
 const arrow = () => {
-  return true
+  return true;
 }
 ```

@@ -6,7 +6,7 @@ tags:
   - html
   - css
   - javascript
-excerpt: A beginner's guide to jumping into the world of web development — tools, resources, and the mindset needed to succeed.
+description: A beginner's guide to jumping into the world of web development — tools, resources, and the mindset needed to succeed.
 ---
 
 # Getting Started with Web Development
