@@ -488,13 +488,12 @@ Even though the scout **would have succeeded** in 3 seconds, the **mission faile
 
 ## The Alchemist's Cheat Sheet
 
-|   |   |
-|---|---|
-|Situation|Use|
-|Need every scout to succeed|`Promise.all()`|
-|Need full report of all scouts|`Promise.allSettled()`|
-|Fastest result wins|`Promise.race()`|
-|First success is enough|`Promise.any()`|
+| Situation                      | Use                    |
+| ------------------------------ | ---------------------- |
+| Need every scout to succeed    | `Promise.all()`        |
+| Need full report of all scouts | `Promise.allSettled()` |
+| Fastest result wins            | `Promise.race()`       |
+| First success is enough        | `Promise.any()`        |
 
 I hope you now understand the role of **Promises and Combinators**. I used the Minecraft example because it closely aligns with my understanding...
 
