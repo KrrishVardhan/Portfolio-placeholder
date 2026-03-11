@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Krrishvardhan Vyas</title>
+    <title>Blog - Krrishvardhan Vyas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -41,11 +41,13 @@
     <script>
         // -----------------------------------------------------------------
         // Post registry — add a new entry here for each new post you write.
-        // Drop the .md file in blog/Blog/ and register it below.
+        // - slug:   filename without .md
+        // - folder: subfolder inside Blog/ (e.g. 'JavaScript'). Omit for root.
         // -----------------------------------------------------------------
         const posts = [
             {
-                slug: 'promise-combinators',          // must match the filename (no .md)
+                slug: 'promise-combinators',
+                folder: 'JavaScript',
                 title: 'Promise Combinators in JavaScript',
                 date: 'March 1, 2026',
                 tags: ['webdev', 'javascript'],
@@ -69,7 +71,7 @@
                     <h3>${post.title}</h3>
                     <p>${post.description}</p>
                     <div class="tags">${post.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-                    <a class="btn" href="post.html?post=${encodeURIComponent(post.slug)}">
+                    <a class="btn" href="post.html?post=${encodeURIComponent(post.folder ? post.folder + '/' + post.slug : post.slug)}">
                         <i data-lucide="book-open"></i> Read Post
                     </a>
                 </div>

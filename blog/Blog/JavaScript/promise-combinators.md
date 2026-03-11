@@ -26,7 +26,7 @@ The plan sounds simple… in theory.
 - Others stay back to prepare the brewing stands
     
 - And everything must happen **at the same time**
-    
+
 
 > "Even if you don't know about the game **Minecraft** you will still be able to understand the examples."
 
